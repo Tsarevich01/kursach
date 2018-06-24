@@ -1,0 +1,27 @@
+{% extends 'blog/base.html' %}
+
+{% block title%}
+Home
+{% endblock %}
+{% block con %}
+    {% for comn in com %}
+        <h4>{{ comn }}gfsdfg</h4>
+
+    {% endfor %}
+    <h1>sgfdhjfgsx</h1>
+{% endblock %}
+
+{% block content %}
+
+    <h1>Home</h1>
+
+
+    {% for comment in comments %}
+
+
+        <h4>{{ comment.title|linebreaks }}</h4>
+        <h8>{{ comment.text|linebreaks }}</h8>
+
+    {% endfor %}
+
+{% endblock %}
